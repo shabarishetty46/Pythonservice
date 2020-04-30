@@ -22,14 +22,6 @@ Requirements
 
 Deployement Procedure:
 
-
-## Installation
-
-Clone the repository 
-
-```bash
-git clone https://github.com/shabarishetty46/Pythonservice.git
-```
 ## Installation
 
 Clone the repository 
