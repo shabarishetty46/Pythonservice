@@ -19,6 +19,14 @@ Requirements
 §  sample_external_url_response_ms{url="https://httpstat.us/200 "}  = [value]
 
 
+## Repository :
+```bash
+   git : https://github.com/shabarishetty46/Pythonservice.git
+   dockerhub image:docker pull shetty12345/pythonservice
+   Service Type  : Cluster IP 
+  ```
+
+
 
 Deployement Procedure:
 
