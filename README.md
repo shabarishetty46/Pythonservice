@@ -160,3 +160,45 @@ python-service-6c84db7cb7-4w5jk   1/1     Running   0          113s   10.40.0.1 
 python-service-6c84db7cb7-gzsqg   1/1     Running   0          109s   10.40.0.2   shettyaws1233c.mylabserver.com   <none>           <none>
 [cloud_user@shettyaws1234c Pythonservice]$
 ```
+
+## Describe svc
+
+```bash
+[cloud_user@shettyaws1234c Pythonservice]$ kubectl describe svc python-service
+Name:              python-service
+Namespace:         default
+Labels:            app=python-service
+Annotations:       Selector:  app=python-service
+Type:              ClusterIP
+IP:                10.110.145.57
+Port:              <unset>  80/TCP
+TargetPort:        80/TCP
+Endpoints:         10.38.0.0:80,10.40.0.1:80
+Session Affinity:  None
+Events:            <none>
+[cloud_user@shettyaws1234c Pythonservice]$
+       
+```
+
+## Check for end point 
+
+```bash 
+[cloud_user@shettyaws1234c Pythonservice]$ kubectl get ep
+NAME             ENDPOINTS                   AGE
+kubernetes       172.31.109.181:6443         104m
+python-service   10.38.0.0:80,10.40.0.1:80   22m
+[cloud_user@shettyaws1234c Pythonservice]$
+```
+
+
+## Access the node via CLuseter Ip
+
+```bash
+ud_user@shettyaws1234c Pythonservice]$ sudo kubectl exec -it python-service-6c84db7cb7-27crl  curl 10.110.145.57:80 --kubeconfig=/etc/kubernetes/admin.conf
+kubectl exec [POD] [COMMAND] is DEPRECATED and will be removed in a future version. Use kubectl kubectl exec [POD] -- [COMMAND] instead.
+sample_external_url_up{url="https://httpstat.us/503"}=0
+sample_external_url_response_ms{url="https://httpstat.us/503"}=0.55
+sample_external_url_up{url="https://httpstat.us/200"}=1
+sample_external_url_response_ms{url="https://httpstat.us/200"}=0.25
+
+```
