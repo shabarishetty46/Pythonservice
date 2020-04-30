@@ -47,32 +47,7 @@ sample_external_url_up{url="https://httpstat.us/200"}=1
 sample_external_url_response_ms{url="https://httpstat.us/200"}=0.13
 [cloud_user@shettyaws1234c Pythonservice]$
 ```
-## DockerFile
 
-```bash
-# Base image
-FROM python:3.6
-
-# Create app directory
-WORKDIR /app
-
-# Install app dependencies
-COPY packages.txt ./
-
-
-# pip to install requests and urllib3
-
-RUN pip install -r packages.txt
-
-COPY *  /app/
-
-
-EXPOSE 8080
-
-# command to get the metrics
-
-CMD [ "python", "pythonservice.py"]
-```
 ## Build a Docker Image from the Dockerfile
 
 ```bash
