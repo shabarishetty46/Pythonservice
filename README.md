@@ -194,7 +194,7 @@ python-service   10.38.0.0:80,10.40.0.1:80   22m
 ## Access the node via CLuseter Ip
 
 ```bash
-ud_user@shettyaws1234c Pythonservice]$ sudo kubectl exec -it python-service-6c84db7cb7-27crl  curl 10.110.145.57:80 --kubeconfig=/etc/kubernetes/admin.conf
+cloud_user@shettyaws1234c Pythonservice]$ sudo kubectl exec -it python-service-6c84db7cb7-27crl  curl 10.110.145.57:80 --kubeconfig=/etc/kubernetes/admin.conf
 kubectl exec [POD] [COMMAND] is DEPRECATED and will be removed in a future version. Use kubectl kubectl exec [POD] -- [COMMAND] instead.
 sample_external_url_up{url="https://httpstat.us/503"}=0
 sample_external_url_response_ms{url="https://httpstat.us/503"}=0.55
