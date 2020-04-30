@@ -32,7 +32,14 @@ git clone https://github.com/shabarishetty46/Pythonservice.git
 ## Folder
 
 ```bash
-git clone https://github.com/shabarishetty46/Pythonservice.git
+[cloud_user@shettyaws1234c Pythonservice]$ ll
+total 24
+-rw-rw-r--. 1 cloud_user cloud_user  284 Apr 30 11:54 Dockerfile
+-rw-rw-r--. 1 cloud_user cloud_user   17 Apr 30 11:49 packages.txt
+-rw-rw-r--. 1 cloud_user cloud_user  653 Apr 30 11:46 pythonservice.py
+-rw-rw-r--. 1 cloud_user cloud_user  565 Apr 30 13:07 pythonservice.yml
+-rw-rw-r--. 1 cloud_user cloud_user 6378 Apr 30 13:28 README.md
+
 ```
 
 
