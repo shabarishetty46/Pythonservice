@@ -22,10 +22,12 @@ Requirements
 
 Deployement Procedure:
 
-Clone the Repository 
---------------------
 
-####Clone the repository 
+## Installation
 
-`$ git clone https://github.com/shabarishetty46/Pythonservice.git`
+Clone the repository 
+
+```bash
+git clone https://github.com/shabarishetty46/Pythonservice.git
+```
 
