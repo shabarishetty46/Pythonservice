@@ -25,5 +25,7 @@ Deployement Procedure:
 Clone the Repository 
 --------------------
 
-git clone https://github.com/shabarishetty46/Pythonservice.git
+####Clone the repository 
+
+`$ git clone https://github.com/shabarishetty46/Pythonservice.git`
 
